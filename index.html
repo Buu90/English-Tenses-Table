@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица времён английского языка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        table {
+            width: 95%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .highlight {
+            background-color: #e6f7ff;
+            font-weight: bold;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            thead tr {
+                display: none;
+            }
+
+            tbody tr {
+                margin-bottom: 15px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            }
+
+            td {
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+                border: none;
+            }
+
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Таблица времён английского языка</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Время</th>
+                <th>Использование</th>
+                <th>Формула</th>
+                <th>Примеры</th>
+                <th>Маркеры времени</th>
+                <th>Основные различия</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Время"><b>Present Simple</b> <br> (Настоящее простое)</td>
+                <td data-label="Использование">Факты, привычки, расписания</td>
+                <td data-label="Формула">(+) V / V+s <br> (-) do/does + not + V <br> (?) Do/Does + S + V?</td>
+                <td data-label="Примеры">✔ She drinks coffee every morning. <br> ❌ He doesn’t like spicy food. <br> ❓ Do they live in New York?</td>
+                <td data-label="Маркеры времени">always, usually, often, sometimes, never, every day, every week, on Sundays, in the morning</td>
+                <td data-label="Основные различия" class="highlight">Действие происходит регулярно или является постоянным фактом.</td>
+            </tr>
+            <tr>
+                <td data-label="Время"><b>Past Simple</b> <br> (Прошедшее простое)</td>
+                <td data-label="Использование">Завершённые действия в прошлом</td>
+                <td data-label="Формула">(+) V2 / V-ed <br> (-) did + not + V <br> (?) Did + S + V?</td>
+                <td data-label="Примеры">✔ We visited Paris last summer. <br> ❌ She didn’t call me yesterday. <br> ❓ Did you watch the movie last night?</td>
+                <td data-label="Маркеры времени">yesterday, last week, last year, in 2005, two days ago, when I was a child</td>
+                <td data-label="Основные различия" class="highlight">Действие произошло в прошлом и завершилось. Время действия обычно указано.</td>
+            </tr>
+            <tr style="border-bottom:solid 2px black ;">
+                <td data-label="Время"><b>Future Simple</b> <br> (Будущее простое)</td>
+                <td data-label="Использование">Предсказания, обещания, спонтанные решения</td>
+                <td data-label="Формула">(+) will + V <br> (-) won’t + V <br> (?) Will + S + V?</td>
+                <td data-label="Примеры">✔ She will help you. <br> ❌ We won’t go. <br> ❓ Will they arrive?</td>
+                <td data-label="Маркеры времени">tomorrow, next week, in the future, one day, soon, in 2030</td>
+                <td data-label="Основные различия" class="highlight">Действие произойдёт в будущем. Часто используется для предсказаний или спонтанных решений.</td>
+            </tr>
+            <tr>
+                <td data-label="Время"><b>Present Continuous</b> <br> (Настоящее продолженное)</td>
+                <td data-label="Использование">Действие, происходящее сейчас</td>
+                <td data-label="Формула">(+) am/is/are + V-ing <br> (-) am/is/are not + V-ing <br> (?) Am/Is/Are + S + V-ing?</td>
+                <td data-label="Примеры">✔ They are watching a movie now. <br> ❌ She isn’t listening to music. <br> ❓ Is he studying?</td>
+                <td data-label="Маркеры времени">now, at the moment, right now, these days, currently, today</td>
+                <td data-label="Основные различия" class="highlight">Действие происходит прямо сейчас или в ближайшее время. Часто используется с "now".</td>
+            </tr>
+            <tr>
+                <td data-label="Время"><b>Past Continuous</b> <br> (Прошедшее продолженное)</td>
+                <td data-label="Использование">Длительное действие в прошлом, прерванное другим событием</td>
+                <td data-label="Формула">(+) Was + I/he/she/it <br> Were + we/you/they + V-ing <br> (-) wasn’t/weren’t + V-ing <br> (?) Was/Were + S + V-ing?</td>
+                <td data-label="Примеры">✔ She was reading at 5 PM. <br> ❌ They weren’t watching TV. <br> ❓ Were you sleeping?</td>
+                <td data-label="Маркеры времени">while, when, at that moment, all day, all night, yesterday at 5 PM</td>
+                <td data-label="Основные различия" class="highlight">Действие длилось в определённый момент в прошлом. Часто используется с "when" или "while".</td>
+            </tr>
+            <tr style="border-bottom:solid 2px black ;">
+                <td data-label="Время"><b>Future Continuous</b> <br> (Будущее продолженное)</td>
+                <td data-label="Использование">Действие, происходящее в определённый момент в будущем</td>
+                <td data-label="Формула">(+) will be + V-ing <br> (-) won’t be + V-ing <br> (?) Will + S + be + V-ing?</td>
+                <td data-label="Примеры">✔ We will be flying at 8 PM. <br> ❌ She won’t be sleeping. <br> ❓ Will they be having dinner?</td>
+                <td data-label="Маркеры времени">this time tomorrow, at 5 PM next Monday, all day tomorrow</td>
+                <td data-label="Основные различия" class="highlight">Действие будет длиться в конкретный момент в будущем. Часто используется с указанием времени.</td>
+            </tr>
+            <tr>
+                <td data-label="Время"><b>Present Perfect</b> <br> (Настоящее совершенное)</td>
+                <td data-label="Использование">Опыт, действие без указания времени, недавно завершённое действие</td>
+                <td data-label="Формула">(+) have/has + V3/ed <br> (-) haven’t/hasn’t + V3/ed <br> (?) Have/Has + S + V3/ed?</td>
+                <td data-label="Примеры">✔ I have just finished my homework. <br> ❌ She hasn’t seen this movie yet. <br> ❓ Have you ever been to Italy? <br> ✔ He has been busy all day.</td>
+                <td data-label="Маркеры времени">just, already, yet, ever, never, for, since, recently, lately</td>
+                <td data-label="Основные различия" class="highlight">Действие произошло в прошлом, но его результат важен в настоящем. Время действия не указано.</td>
+            </tr>
+            <tr>
+                <td data-label="Время"><b>Past Perfect</b> <br> (Прошедшее совершенное)</td>
+                <td data-label="Использование">Действие, произошедшее до другого действия в прошлом; часто используется в косвенной речи для передачи Present Perfect.</td>
+                <td data-label="Формула">(+) had + V3/ed <br> (-) hadn’t + V3/ed <br> (?) Had + S + V3/ed?</td>
+                <td data-label="Примеры">✔ She had already left. <br> ❌ They hadn’t finished dinner. <br> ❓ Had you met her before? <br> ✔ She said that she had been to Japan.</td>
+                <td data-label="Маркеры времени">before, after, by the time, already, just, never, until that moment</td>
+                <td data-label="Основные различия" class="highlight">Одно действие завершилось раньше другого действия в прошлом. Часто используется в косвенной речи для передачи Present Perfect.</td>
+            </tr>
+            <tr>
+                <td data-label="Время"><b>Future Perfect</b> <br> (Будущее совершенное)</td>
+                <td data-label="Использование">Действие, завершённое к определённому моменту в будущем</td>
+                <td data-label="Формула">(+) will have + V3/ed <br> (-) won’t have + V3/ed <br> (?) Will + S + have + V3/ed?</td>
+                <td data-label="Примеры">✔ I will have graduated by next year. <br> ❌ She won’t have finished. <br> ❓ Will they have arrived?</td>
+                <td data-label="Маркеры времени">by tomorrow, by next week, by the time, until, before</td>
+                <td data-label="Основные различия" class="highlight">Действие завершится до определённого момента в будущем. Часто используется с "by".</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
